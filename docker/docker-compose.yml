@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: symfony_app:latest
     container_name: symfony_app
     volumes:
       - ..:/var/www/html
