@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: symfony_app
     volumes:
-      - .:/var/www/html
+      - ..:/var/www/html
     ports:
       - "9000:9000"
     depends_on:
