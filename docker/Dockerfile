@@ -12,7 +12,7 @@ COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 # Copier les fichiers de l'application Symfony (si existants)
-COPY . .
+COPY ../ /var/www/html
 
 # Donner les permissions à www-data pour Symfony
 RUN chown -R www-data:www-data /var/www/html
