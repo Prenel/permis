@@ -18,4 +18,4 @@ RUN chown -R www-data:www-data /var/www/html
 EXPOSE 4000
 
 # Commande de démarrage
-CMD ["php-fpm"]
+CMD ["php", "-S", "0.0.0.0:4000", "-t", "/var/www/html/public"]
