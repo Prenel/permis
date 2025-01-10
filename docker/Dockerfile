@@ -15,7 +15,7 @@ WORKDIR /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 
 # Exposer le port par défaut de PHP-FPM
-EXPOSE 9000
+EXPOSE 4000
 
 # Commande de démarrage
 CMD ["php-fpm"]
